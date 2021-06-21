@@ -1,0 +1,140 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "settings";
+
+// CUSTOM COMPONENTS STYLES
+// .burger {
+//   --burger-width: 40px;
+//   --burger-height: 20px;
+//   --burger-line-height: 2px;
+
+//   @include burger;
+// }
+
+h1 {
+    color: #141419;
+    font-size: 60px;
+    line-height: 72px;
+    sfont-weight: 700;
+}
+
+p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+        span {
+            color: #FB973B;
+        }
+}
+
+.header {
+    
+        &__wrap {
+            width: 100%;
+            max-height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        &__logo {
+            min-width: 60px;
+            position: relative;
+           //flex: 0 0 10%;
+            
+            img {
+                
+            }
+        }
+
+        &__nav {
+            width: 768px;;
+            
+        }
+
+        &__phone {
+            font-weight: 700;
+            color: #141419;
+        }
+}
+.nav {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+        &__link {
+            margin: 15px;
+        }
+
+        &__item {
+            color: #616161;
+
+        }
+}
+
+//intro
+.intro {
+    position: relative;
+    margin: 0 auto;
+    min-height: 572px;
+    max-width: 1810px;
+    
+    &__wrap {
+        position: relative;
+
+        &__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        &__title {
+
+        }
+
+        
+        .lamp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        
+            
+    }
+    .cow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -10;        
+        width: 851px;       
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
+
+input[type=text] {
+    border: 1px solid #444;
+    padding: 2px;
+    width: 196px;
+    height: 58px;
+    border: 1px solid #E1E1E1;
+}
+    
+input[type=submit] {
+    color: #FFFFFF;
+    background-color: #FB973B;
+    border: none;
+    width: 196px;
+    height: 58px;
+    cursor: pointer;
+}
+
+
